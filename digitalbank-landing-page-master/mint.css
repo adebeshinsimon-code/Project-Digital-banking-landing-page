@@ -1,0 +1,31 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+.container div{
+    background-color: black;
+    width: 250px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     flex-wrap: wrap; 
+     align-content: center;
+    
+    
+}
+.item div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    width: 70px;
+      margin: 5px;     
+}

@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+     width: 1440px;
+}
+ .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ background-color: white;
+ padding: 15px;
+ position:fixed;
+ z-index: 2;
+ gap: 130px;
+ width: 100%;
+ font-size: small;
+ border: none;
+ height: 65px;
+ 
+} 
+.header img{
+   height: 30px;
+}
+.first-link {
+  display: flex;
+  gap: 12px;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 18px;
+  
+}
+a{ 
+     text-decoration: none;
+     color: hsl(233, 8%, 62%); 
+     cursor: pointer;
+}
+a:hover{
+    border-bottom: 3px solid  hsl(136, 64%, 51%);
+}
+.header button{
+    background: linear-gradient(to top, hsl(136, 64%, 51%),  hsl(192, 69%, 51%));
+    padding: 5px;
+    border: none;
+    color: white;
+    width:140px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.top-content{
+    display: flex;
+    position: relative;
+    overflow: hidden; 
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-size: 700px;
+    background-repeat: no-repeat;
+       background-position-y: -150px;    
+    background-position-x: 700px; 
+    background-color: hsl(0, 0%, 98%);
+}
+.top-content img{
+    width: 400px;
+    transform: translateY(-70px) translateX(497px) ;  
+    height:550px;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 150px;  
+    transform: translateX(150px); 
+}
+
+.top h3{
+    font-size: 30px;
+    width: 300px;
+    gap: 12px;
+    gap: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+.top h5{
+    font-size: 17px;
+    width: 400px;
+    transform: translateX(-8px);
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(233, 8%, 62%) ;
+}
+.top button{
+      background: linear-gradient(to top, hsl(136, 64%, 51%),  hsl(192, 69%, 51%));
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 40px;
+}
+.second-content{
+    display: flex;   
+}
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px;
+    padding: 40px;
+  width: 100%;
+    transform: translatey(-130px); 
+    /* background-color: rgb(244, 243, 243); */
+    background-color: hsl(220, 16%, 96%) ;
+}
+.middle-content h3{
+font-size: 27px;
+font-weight: 100;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 12px;
+transform: translateX(130px);
+}
+.middle-content h5{
+ color: hsl(233, 8%, 62%) ;
+ font-size: 13px;
+ font-family: Arial, Helvetica, sans-serif;
+ transform: translateX(130px);
+}
+.second-content{
+    display: flex;
+    gap: 50px;
+    width: 780px;
+   transform: translateX(135px);
+}
+.banking h3,.budgeting h3,.Onboarding h3, .api h3{
+font-size: 19px;
+transform: translateX(-10px);
+width: 150px;
+}
+.banking,.budgeting,.Onboarding,.api{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.second-content h5{
+    transform: translateX(-10px);
+}
+.banking img,.budgeting img,.Onboarding img,.api img{
+width: 30px;
+}
+.bottom-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    transform: translateY(-100px)translateX(180px);
+  width: 200px;
+}
+.restaurant-card img,.plane-card img,.confetti-card img{
+    width: 220px;
+    height: 100px;
+    object-fit: cover;
+}
+.both-card{
+    display: flex;
+    gap: 30px;  
+    border-radius: 19px;
+   height: 260px;
+}
+.currency-card,.restaurant-card,.plane-card,.confetti-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color:  hsl(220, 16%, 96%);
+    gap: 8px; 
+    border-radius: 5px;
+}
+.currency-card img{
+    width: 230px;
+    height: 100px;
+    object-fit: cover;
+}
+.currency-card h6,p,h5 ,.restaurant-card h6,p,h5,.plane-card h6,p,h5,.confetti-card h6,p,h5{
+    margin-left: 7px;
+    padding: 3px;
+}
+.currency-card h6,h5,.restaurant-card h6,h5,.plane-card h6,h5,.confetti-card h6,h5{
+    color:  hsl(240, 1%, 67%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.currency-card p,.restaurant-card p,.plane-card p,.confetti-card p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;  
+}
+.currency-card h5,p,.restaurant-card h5,p,.plane-card h5,p,.confetti-card h5,p{
+    transform: translateY(-7px);
+}
+
+.bottom-content h3{
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
+}
+.footer{
+   display: flex;
+   background-color:  hsl(233, 26%, 24%);
+   /* margin-bottom: 50px; */
+   padding: 25px;
+   width: 100%;
+}
+.social-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer a{
+    border: none;
+}
+.facebook{
+    display: flex;
+    gap: 12px;
+}
+.social-link{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 90px;
+}
+.second-link{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.upper-link{
+    display: flex;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateX(150px);
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(500px);
+    gap: 25px;
+}
+.last button{
+     background: linear-gradient(to top, hsl(136, 64%, 51%),  hsl(192, 69%, 51%));
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-left: 60px;
+}
+.social-icon img{
+    transform: translateX(145px);
+}
+.last h5{
+    color:  hsl(233, 8%, 62%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.upper-link  :hover{
+    cursor: pointer;
+    color: hsl(136, 64%, 51%);
+}
+.restaurant-card a:hover {
+    border: none;
+    color: hsl(136, 64%, 51%);
+}
+.social-icon:hover{
+    cursor: pointer;
+}
+
+
+ 
